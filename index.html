@@ -42,12 +42,12 @@
 </head>
 <body>
 	<!--ADD THE FORM EMBEDURL BELOW-->
-	<meta itemprop="embedUrl" content="https://docs.google.com/forms/d/1Vf0E1orZ7dX1d-yMWcS-wG6dsT7Ah-p9dL7s91eudKk/viewform?embedded=true">
+	<meta itemprop="embedUrl" content="https://docs.google.com/forms/d/1q_C16qdDN9yq9xj9X_F2xU4hfyjRzSCeOj5XD8_wNUY/viewform?embedded=true">
 
 	<!--ADD THE FORM RESPONSE ACTION HERE, WITH A REDIRECT-->
 	<script type="text/javascript">var submitted=false;</script>
 	<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {window.location='http://bostonworts.github.io/bwpmap/results/';}"></iframe>
-	<form action="https://docs.google.com/forms/d/1Vf0E1orZ7dX1d-yMWcS-wG6dsT7Ah-p9dL7s91eudKk/formResponse" method="POST" id="ss-form" target="hidden_iframe" onsubmit="submitted=true;">
+	<form action="https://docs.google.com/forms/d/1q_C16qdDN9yq9xj9X_F2xU4hfyjRzSCeOj5XD8_wNUY/formResponse" method="POST" id="ss-form" target="hidden_iframe" onsubmit="submitted=true;">
 		<div class="container">
 			<div class="jumbotron starter-template">
 				<h1>Boston Wort Processors Member Map</h1>
@@ -64,7 +64,7 @@
 				</div>
 				<div class="starter-template">
 					<h2><em>(2) </em>What's your name (optional)?<h2>
-					<input class="form-control" name="entry.1840911520" value="" id="entry_1840911520" placeholder="name">
+					<input class="form-control" name="entry.1916041296" value="" id="entry_1916041296" placeholder="name">
 				</div>
 				<!-- ADD GOOGLEFORM-RELATED INPUTS HERE, ALL HIDDEN.
 				THEY'LL BE GIVEN VALUES IN THE SCRIPT BELOW
@@ -72,8 +72,8 @@
 				THOSE IN THE SOURCE OF THE GOOGLE-HOSTED LIVE FORM-->
 
 				<!-- QUESTION 2: LAT/LONG -->
-				<input type="hidden" name="entry.1583105099" value="" id="entry_1583105099">
-				<input type="hidden" name="entry.1816322987" value="" id="entry_1816322987">
+				<input type="hidden" name="entry.2119658880" value="" id="entry_2119658880">
+				<input type="hidden" name="entry.1984352115" value="" id="entry_1984352115">
 
 				<!-- PAGE STUFF -->
 				<input type="hidden" name="pageNumber" value="0">
@@ -95,11 +95,11 @@
 	<script src='https://api.mapbox.com/mapbox.js/v2.2.1/mapbox.js'></script>
 	<script type='text/javascript'>
 		// Set default location in case the IP doesn't have one
-		var y = 37.09024;
-		var x = -95.71289;
-		var z = 8;
-		$('#entry_1583105099').attr('value', y);
-		$('#entry_1816322987').attr('value', x);
+		var y = 42.360082;
+		var x = -71.058880;
+		var z = 10;
+		$('#entry_2119658880').attr('value', y);
+		$('#entry_1984352115').attr('value', x);
 
 		// Build the map
 		L.mapbox.accessToken = 'your_api_key_here';
@@ -107,8 +107,8 @@
 
 		// Update these values as the map gets dragged around
 		map.on('moveend', function(event) {
-			$('#entry_1583105099').attr('value', map.getCenter().lat);
-			$('#entry_1816322987').attr('value', map.getCenter().lng);
+			$('#entry_2119658880').attr('value', map.getCenter().lat);
+			$('#entry_1984352115').attr('value', map.getCenter().lng);
 		});
 
 		// Grab IP location from freegeoip API
@@ -118,8 +118,8 @@
 				x = json.longitude;
 				z = 8
 				// Set form lat/lon fields from map center location
-				$('#entry_1583105099').attr('value', y);
-				$('#entry_1816322987').attr('value', x);
+				$('#entry_2119658880').attr('value', y);
+				$('#entry_1984352115').attr('value', x);
 				map.panTo([y, x]);
 			}
 		});
