@@ -1,8 +1,6 @@
-# homebrewchat
-homebrewing Slack community member map
+# bwpmap
+Boston Wort Processors anonymous member map
 
-Add yourself to the map here: http://dmofot.github.io/homebrewchat/
+Add yourself to the map here: http://bostonworts.github.io/bwpmap/
 
-See the results here: http://dmofot.github.io/homebrewchat/results/
-
-This is a modified version of a [@vtcraghead](https://github.com/wboykinm/) joint.
+See the results here: http://bostonworts.github.io/bwpmap/results/
