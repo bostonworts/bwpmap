@@ -86,9 +86,6 @@
         myLayer.on('mouseout', function(e) {
             e.layer.closePopup();
         });
-        myLayer.on('click', function(e) {
-            window.open(e.layer.feature.properties.url);
-        });
         map.setView([42.360082, -71.058880], 10);
         map.fitBounds(myLayer.getBounds());
     });
